@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControllersLayout.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Control slider!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Picker x:Name="controlpicker" VerticalOptions="CenterAndExpand"  Title="Ingredientes Nocilla"/>            <Stepper x:Name="stepper1" Minimum="0" Maximum="10" VerticalOptions="CenterAndExpand"/>
+            <Slider Minimum="0" Maximum="100" Value="14" x:Name="controlslider" VerticalOptions="CenterAndExpand"/>
+            <Label TextColor="Blue" FontSize="Large" x:Name="lblvalor" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

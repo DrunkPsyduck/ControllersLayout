@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControllersLayout.PaginaEstilos">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="ColorLetra">White</Color>
+            <Color x:Key="ColorFondo">Fuchsia</Color>
+            
+            <Style TargetType="Label" x:Key="estiloLabel">
+                <Setter Property="FontFamily" Value="Verdana"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="TextColor" Value="RoyalBlue"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!" Style="{StaticResource estiloLabel}" />
+
+            <Label Text="Welcome to Xamarin.Forms!" FontSize="50" TextColor="{StaticResource Key=ColorLetra}" BackgroundColor="{StaticResource Key=ColorFondo}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
